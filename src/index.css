@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#nprogress .bar {
+  background: #0099ff;
+  height: 5px;
+}
+
+.nav.active {
+  background-color: #0099ff;
+  color: #fff;
+}
+
+body {
+  display: block;
+  margin: 0px;
+}
