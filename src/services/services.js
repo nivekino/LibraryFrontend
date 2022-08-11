@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBase = "http://localhost:9000/";
+const urlBase = "http://localhost:9000";
 
 /**
  * @param {string}  url url a la cual consultar
