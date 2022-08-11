@@ -19,15 +19,16 @@ const CreateBooks = () => {
       stock: "",
     },
     onSubmit: (values) => {
-      const formData = new FormData();
-      formData.append("title", values.title);
-      formData.append("author", values.author);
-      formData.append("publishedYear", values.publishedYear);
-      formData.append("genre", values.genre);
-      formData.append("stock", values.stock);
+      const formData = {
+        title: values.title,
+        author: values.author,
+        publishedYear: values.publishedYear,
+        genere: values.genere,
+        stock: values.stock,
+      }
 
       httpClient
-        .postUpload("librarian/add", formData, {
+        .post("librarian/add", formData, {
           Authorization: `JWT ${user.token}`,
         })
         .then((res) => {
@@ -63,9 +64,6 @@ const CreateBooks = () => {
 
   return (
     <div className="px-8 py-5 w-full">
-      <div className="flex flex-col items-center">
-        <h3 className="text-5xl text-gray-800 font-extrabold">Create a book</h3>
-      </div>
       <form onSubmit={formik.handleSubmit}>
         <div className="flex flex-col w-full justify-center items-center mt-4 mb-4">
           <input
@@ -101,7 +99,7 @@ const CreateBooks = () => {
                     my-4"
           />
           <input
-            type="text"
+            type="number"
             name="publishedYear"
             placeholder="Published Year"
             onChange={formik.handleChange}
