@@ -77,7 +77,7 @@ const RequestDetails = () => {
           <div className="flex flex-col h-full justify-between">
             <h3 className="text-2xl font-bold">{bookDetails.title}</h3>
             <p className="text-gray-600 text-base">
-              Author: {bookDetails.author}, Genre: {bookDetails.genre}, Year:
+              Author: {bookDetails.author}, Genere: {bookDetails.genere}, Year:
               {bookDetails.publishedYear}
             </p>
             <p className="text-gray-600 text-base">

@@ -2,9 +2,7 @@ import React, { useEffect, useReducer } from "react";
 import App from "./routers/App";
 import { AuthContext } from "./auth/AuthContext";
 import { authReducer } from "./auth/authReducer";
-import "../src/assets/css/all.min.css";
 import "./index.css";
-
 
 const init = () => {
   const user = JSON.parse(localStorage.getItem("user")) || { logged: false };
