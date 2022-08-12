@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const urlBase = "http://localhost:9000";
+const urlBase = "https://nivekino.houdini21-dev.com";
 
 /**
  * @param {string}  url url a la cual consultar
