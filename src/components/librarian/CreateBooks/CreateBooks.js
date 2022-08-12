@@ -64,6 +64,9 @@ const CreateBooks = () => {
 
   return (
     <div className="px-8 py-5 w-full">
+      <div className="flex flex-col items-center">
+        <h3 className="text-5xl text-gray-800 font-extrabold">Create a Book</h3>
+      </div>
       <form onSubmit={formik.handleSubmit}>
         <div className="flex flex-col w-full justify-center items-center mt-4 mb-4">
           <input

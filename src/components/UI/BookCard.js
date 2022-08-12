@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BookCard = ({ idBook, title, author, url, status, student}) => {
   return (
-    <div className="w-1/2 md:w-1/2 lg:w-1/4 my-3 shadow-md rounded-lg">
+    <div className="w-1/2 md:w-1/2 lg:w-1/5 my-3 mr-3 py-4 shadow-md rounded-lg">
       <Link to={`/${url}/${idBook}`}>
         <div className="flex flex-col w-10/12 mx-auto">
           <div className="flex flex-col mt-4">
